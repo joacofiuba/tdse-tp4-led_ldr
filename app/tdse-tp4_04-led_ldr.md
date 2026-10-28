@@ -9,10 +9,8 @@ Observación: A mayor intensidad lumínica la resistencia del LDR disminuye
 
 Se graficó una cantidad grande de muestras con las magnitudes medidas por el ADC conectado al LDR vs *duty-cycle* del PWM que controla el LED.  Sobre los datos gráficados se calculó una regresión lineal. 
 
-<figure id="figura1">
-  <img src="app/Figure_1.png" alt="Regresión lineal ADC-PWM">
-  <figcaption><b>Figura 1:</b> Este es el pie de foto de la figura.</figcaption>
-</figure>
+![Regresion lineal ADC-PWM](Figure_1.png)
+
 
 Vemos que existe una correlación negativa. Cuando el duty cycle del PWM incrementa (tensión media mayor) esto se traduce en una intensidad luminica mayor por parte del LED. El LDR sensa la intensidad del LED y disminuye su resistencia, como el LDR está conectado a R y a GND; si R>>LDR => el ADC lee una tensión cada vez menor.
 
